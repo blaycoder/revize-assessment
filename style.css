@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-nav li a {
+    font-weight: 700;
+    font-family: #2f2f2f;
+}
+
+.navbar-nav .nav-item{
+    margin-left: 5px;
+    padding: 10px;
+    border-right: #59cbfb 3px solid;
+}
+
+.navbar-nav .nav-item:nth-child(6){
+    border: none;
+}
+
+.social-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+}
+
+
+.translate-dropdown > a, .translate-dropdown > a:hover, .navbar-nav .nav-link.show {
+    color: #0072ce;
+}
+
+.search-field{
+    background-color: #edfaff;
+    border: 3px #59cbfb solid;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 15px;
+}
+
+.hero-banner{
+    background-image: url(./images/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 240px;
+}
+
+.hero-banner-content{
+    padding-top: 150px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.hero-banner-city{
+    font-size: 80px;
+}
+
+.hero-banner-state{
+    font-size: 64px;
+    padding-left: 12em !important;
+}
+
+
+.sidebar-icons-container{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: grid;
+    grid-row-gap: 4px;
+    grid-column: auto;
+}
+
+
+.text-with-underline{
+    position: relative;
+}
+
+.quick-links-container{
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+
+.text-with-underline:after{
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -2px;
+    left: 37%;
+    width: 25%;
+    height: 5px;
+    background-color: #6cc24a;
+}
+
+.quick-link-card{
+    background-color: #def5fe;
+    padding: 20px;
+}
+
+.upcoming-events{
+    padding: 100px;
+    background-image: url(./images/event-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.upcoming-event-content .text-with-underline:after{
+    width: 60%;
+    left: 0;
+}
+
+.calendar{
+    margin-top: 20px;
+}
+
+.month {
+    padding: 20px 25px;
+    width: 70%;
+    background: #0072ce;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-bottom: 2px solid #0072ce;
+    width: 70%;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 12.6%;
+    color: #0072ce;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background: #ffffff;
+    margin: 0;
+    width: 70%;
+  }
+  
+  .days li {
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    width: 12.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size:12px;
+    color: #777;
+  }
+
+  .days li:nth-child(1), .days li:nth-child(2){
+    font-weight: 400;
+  }
+  
+  .days li .active,  .days li .next-event {
+    padding: 4px 10px;
+    border-radius: 3px;
+    background: #6cc24a;
+    color: white !important
+  }
+
+  .days li .next-event{
+    background-color: #0072ce;
+  }
+ 
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+  }
