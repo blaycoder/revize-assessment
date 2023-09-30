@@ -15,8 +15,7 @@ body{
 }
 
 .navbar-nav .nav-item{
-    margin-left: 5px;
-    padding: 10px;
+    margin-left: 2px;
     border-right: #59cbfb 3px solid;
 }
 
